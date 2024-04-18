@@ -1,0 +1,145 @@
+:root {
+    --text: #eed7fe;
+    --background: #161622;
+    --sidebar-bg: #321045;
+    --primary: #c570fa;
+    --secondary: #86a206;
+    --accent: #22f722;
+  }
+.about-main {
+    background-color: var(--background);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+  }
+.ellipse {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 25vw;
+    bottom: 10vh;
+    border-radius: 50%;
+    background: #22f722;
+    mix-blend-mode: multiply;
+    border: 10px solid #000000;
+    box-shadow: inset 0px 4px 4px rgb(33, 206, 137);
+    transform: rotate(-17.23deg);
+    z-index: 0;
+  }
+  
+  .small-ellipse {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 35vw;
+    bottom: 20vh;
+    background: #eed7fe;
+    border-radius: 50%;
+    mix-blend-mode: color-burn;
+    border: 5px solid #000000;
+    box-shadow: inset 0px 4px 4px #00000040;
+    transform: rotate(-21.23deg);
+    z-index: 10;
+  }
+  
+  .content {
+    display: flex;
+    height: 70vh;
+    width: 100vw;
+    align-items: center;
+    gap: 8vw;
+  }
+  .content .some-text {
+    color: #ffffff;
+    height: 50vh;
+    width: 40vw;
+    padding-top: 5vh;
+    margin-left: 3vw;
+    padding-left: 5vw;
+    z-index: 20;
+  }
+  
+  .content .some-text .tagline {
+     position: relative;
+     top: 20px; 
+    font-weight: 400;
+    font-size: 30px;
+  
+    letter-spacing: 0.3em;
+    color: #ffffff;
+    z-index: 20;
+  }
+  
+  .content .some-text .title {
+  
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    z-index: 20;
+  }
+  
+  .content .some-text .track {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 106px;
+    letter-spacing: 0.05em;
+  
+    background: linear-gradient(
+      91.4deg,
+      #c570fa 22.83%,
+      #8c9f37 36.08%,
+      #999999 62.76%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    z-index: 20;
+  }
+  .content .some-text .logo {
+    font-weight: 500;
+    font-size: 96px;
+  }
+  
+  .content .artwork {
+    /* border: 2px solid white; */
+    height: 50vh;
+    z-index: 7;
+  }
+  
+  .content .artwork .guy-image {
+    z-index: 7;
+    /* margin-top: 1vh; */
+    margin-left: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .content .guy-image img {
+    transform: scale(1.2); 
+    z-index: 7;
+  }
+  
+  .smallest-ellipse {
+    position: absolute;
+    width: 25vw;
+    height: 10vh;
+    left: 59vw;
+    top: 65vh;
+    border-radius: 80%;
+    background: radial-gradient(
+        73.89% 73.88% at 7.86% 50.59%,
+        rgba(86, 9, 135, 0.2) 0%,
+        rgba(167, 137, 187, 0.2) 61.63%,
+        rgba(88, 11, 135, 0.2) 99.99%,
+        rgba(173, 173, 173, 0.2) 100%
+      ),
+      rgba(205, 195, 220, 0.74);
+    mix-blend-mode: hard-light;
+    z-index: 5;
+  }
+  

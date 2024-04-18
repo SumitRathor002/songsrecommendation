@@ -1,0 +1,33 @@
+.song-card-container {
+  margin-left: 20px;
+}
+
+.song-container {
+  margin-top: 10px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aliceblue; */
+  height: 200px;
+  border-radius: 10px;
+  /* border: 2px solid white; */
+  width: 60vw;
+}
+.song-box {
+  display: flex;
+  align-items: center;
+  background-color: rgb(20, 133, 233);
+  width: 100vw;
+  padding: 0.5rem;
+  /* height: 50px; */
+  border-radius: 10px;
+}
+.song-box img {
+  height: 200px;
+  border-radius: 6px;
+  width: auto;
+}
+.song-contents {
+  padding: 2.5rem;
+}

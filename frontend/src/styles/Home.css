@@ -1,0 +1,18 @@
+:root {
+    --text: #eed7fe;
+    --background:  #161622;
+    --sidebar-bg: #321045;
+    --primary: #c570fa;
+    --secondary: #86a206;
+    --accent: #22f722;
+  }
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    height: 85vh;
+    width: 90vw;
+    overflow-y: auto;
+    /* border: 2px solid white; */
+  }
+

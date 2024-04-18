@@ -1,0 +1,4 @@
+venv/
+frontend/node_modules/
+groove/groove/__pycache__/
+groove/users/__pycache__/

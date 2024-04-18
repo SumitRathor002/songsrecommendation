@@ -1,0 +1,73 @@
+:root {
+  --text: #eed7fe;
+  --background: #161622;
+  --sidebar-bg: #321045;
+  --primary: #c570fa;
+  --secondary: #86a206;
+  --accent: #22f722;
+  --linear-grad: linear-gradient(to right, #141e30, #243b55);
+  --grad-clr1: #141e30;
+  --grad-clr2: #620889ab;
+}
+
+.card-outer-div {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1.25rem;
+}
+
+
+.card-inner-div {
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+  background: #080808;
+  /* border: 2px solid white; */
+}
+
+.card-inner-div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+
+.card-contents {
+  padding: 1rem;
+  text-align: left;
+  margin-top: 0.5rem;
+}
+.card-contents blockquote p {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+.card-contents figcaption {
+    font-size: medium;
+}
+.card-contents figcaption :first-child {
+  font-weight: 500;
+  color: rgb(14, 165, 233);
+}
+.card-contents .artist-name{
+  font-size: 0.9rem;
+}
+.card-contents .duration{
+  font-size: 0.8rem;
+}
+
+a {
+  color: inherit; 
+  text-decoration: none;
+}
+
+/* .card-inner-div:hover{
+  border: 2px solid white;
+}  */
+
+.card-inner-div:hover{
+  background-color: var(--grad-clr2);
+}

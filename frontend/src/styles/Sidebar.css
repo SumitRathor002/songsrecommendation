@@ -1,0 +1,99 @@
+.sidebar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 19vw;
+  height: 89vh;
+  /* border: 2px solid white; */
+}
+.sidebar-nav {
+  /* border: 2px solid white; */
+  position: relative;
+  width: 19vw;
+  /* width: 325px; */
+  height: 89vh;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  /* background-color: var(--background); */
+  /* background-color: white; */
+  padding: 15px;
+  /* border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px; */
+  transition: all 0.3s;
+  /* border-radius: 30px; */
+}
+.sidebar .user-div {
+  display: flex;
+  gap: 20px;
+  background: var(--background);
+  /* padding-bottom: 20px; */
+  /* border-bottom: 1px solid; */
+  align-items: center;
+  padding-left: 1vw;
+  padding-bottom: 3vh;
+  color: white;
+
+  /* justify-content: center; */
+}
+.user-details .name {
+  margin: 10px 0px 5px;
+}
+.user-img {
+  font-size: 35px;
+
+}
+
+
+.user-details .user-email,
+.menu .title {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.menu ul li {
+  list-style: none;
+  margin-bottom: 5px;
+  /* border: 2px solid white; */
+  /* padding-left:10px; */
+}
+.menu ul li a {
+  /* border: 2px solid white; */
+  /* margin: 40px; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+.menu ul li a:hover,
+.menu ul li.active a {
+  color: #fff;
+  background-color: var(--primary);
+}
+
+.menu ul li .icon {
+  font-size: 20px;
+}
+.menu ul li .text {
+  flex: 1;
+}
+
+
+.menu-btn:hover i {
+  color: var(--primary);
+}
+.menu-btn i {
+  transition: all 0.3s;
+}
+
+
+
+

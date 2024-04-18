@@ -1,0 +1,231 @@
+:root {
+  --text: #eed7fe;
+  --background: #161622;
+  --sidebar-bg: #321045;
+  --primary: #c570fa;
+  --secondary: #86a206;
+  --accent: #22f722;
+  --linear-grad: linear-gradient(to right, #141e30, #243b55);
+  --grad-clr1: #141e30;
+  --grad-clr2: #620889ab;
+}
+.container {
+  padding-left: 13%;
+}
+.signup-div {
+  height: 89vh;
+  background-color: var(--background);
+  display: grid;
+  place-content: center;
+}
+.signup-div .container {
+  position: relative;
+  width: 850px;
+  height: 500px;
+  background-color: var(--sidebar-bg);
+  box-shadow: 25px 30px 55px #5557;
+  border-radius: 13px;
+  overflow: hidden;
+}
+.signup-div .form-container {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  padding: 0px 40px;
+  transform: translateX(-20%);
+  /* margin-right: 10px; */
+  transition: all 0.6s ease-in-out;
+}
+.signup-div .sign-up-container {
+  opacity: 0;
+  z-index: 1;
+}
+.signup-div .sign-in-container {
+  z-index: 2;
+}
+
+.signup-div form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 50px;
+}
+.signup-div h1 {
+  color: white;
+}
+
+.signup-div span {
+  font-size: 12px;
+}
+.signup-div .infield {
+  color: white;
+  position: relative;
+  margin: 8px 0px;
+  width: 100%;
+}
+.signup-div input {
+  color: white;
+  width: 100%;
+  padding: 12px 8px;
+  background-color: var(--background);
+  border: none;
+  outline: none;
+}
+
+.signup-div label {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%);
+  width: 0%;
+  height: 2px;
+  background: var(--accent);
+  transition: 0.35;
+}
+.signup-div input:focus ~ label {
+  width: 100%;
+}
+
+.signup-div button {
+  border-radius: 20px;
+  border: none;
+  /* /* border: 1px solid var(--primary);/ */
+  background: var(--primary);
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.signup-div .form-container button {
+  margin-top: 17px;
+  transition: 80ms ease-in;
+}
+.signup-div .form-container button:hover {
+  background: #fff;
+  color: var(--grad-clr1);
+}
+.signup-div .overlay-container {
+  position: absolute;
+  top: 0;
+  left: 60%;
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 9;
+}
+
+#overlayBtn {
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 304px;
+  transform: translate(-50%);
+  width: 143.67px;
+  height: 40px;
+  background: transparent;
+  border-radius: 20px;
+}
+.signup-div .overlay {
+  position: relative;
+  background: var(--grad-clr2);
+  color: #fff;
+  left: -150%;
+  height: 100%;
+  width: 250%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.signup-div .overlay-panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 40px;
+  text-align: center;
+  height: 100%;
+  width: 340px;
+  transition: 0.6s ease-in-out;
+}
+.signup-div .overlay-left {
+  right: 60%;
+  transform: translateX(-12%);
+}
+.signup-div .overlay-right {
+  right: 0;
+  transform: translateX(0%);
+}
+.signup-div .overlay-panel h1 {
+  color: #fff;
+}
+.signup-div p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 25px 0px 35px;
+}
+.signup-div .overlay-panel-button {
+  border: none;
+  background-color: transparent;
+}
+
+.signup-div .right-panel-active .overlay-container {
+  transform: translateX(-150%);
+}
+.signup-div .right-panel-active .overlay {
+  transform: translateX(50%);
+}
+.signup-div .right-panel-active .overlay-left {
+  transform: translateX(25%);
+}
+.signup-div .right-panel-active .overlay-right {
+  transform: translateX(35%);
+}
+.signup-div .right-panel-active .sign-in-container {
+  transform: translate(20%);
+  opacity: 0;
+}
+.signup-div .right-panel-active .sign-up-container {
+  transform: translate(45%);
+  opacity: 1;
+  z-index: 5;
+  animation: show 0.6s;
+}
+
+.error-message {
+  color: white;
+}
+
+@keyframes show {
+  0%,
+  50% {
+    opacity: 0;
+    z-index: 1;
+  }
+  50.1%,
+  100% {
+    opacity: 1;
+    z-index: 5;
+  }
+}
+.signup-div .btnScaled {
+  animation: scaleBtn 0.6s;
+}
+@keyframes scaleBtn {
+  0% {
+    width: 143.67px;
+  }
+  50% {
+    width: 250px;
+  }
+  100% {
+    width: 143.67px;
+  }
+}

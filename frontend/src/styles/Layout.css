@@ -1,0 +1,19 @@
+:root {
+    --text: #eed7fe;
+    --background:  #161622;
+    --sidebar-bg: #321045;
+    --primary: #c570fa;
+    --secondary: #86a206;
+    --accent: #22f722;
+  }
+.layout-main{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background);
+    color: var(--text);
+}
+.layout{
+    display: flex;
+    /* height: 89vh;
+    width: 100vw; */
+}
